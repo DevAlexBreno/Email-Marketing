@@ -4,7 +4,7 @@ PROJETO EMAIL MARKETING
 Para começar tive curiosidade de saber como funcionava os envios de emails de produtos.
 
 2 - OBJETIVO INICIAL:
-Botar em pratica tudo o que eu sei ate agora sobre classes e aprender mais sobre funcções de emails dentro do PHP.
+Botar em pratica tudo o que eu sei de forma simples, e futuramente refatorar o codigo para implementar a estrutura MVC e deixar o codigo reutilizavel e mais facil para , futuramente implementar algo novo.
 
 3 - OBJETIVO FINAL(PRINCIPAL):
 Fazer o envio de um email assim que alguem cadastrar ou fizer aniversario, para ter uma experiencia de marketing.
