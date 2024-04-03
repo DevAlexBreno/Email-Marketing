@@ -11,6 +11,7 @@ if(isset($_SESSION['usuario'])){
     header('Location: index.php');
 }
 
+//cadastrar cliente
 if(isset($_POST['cadastrar'])){
     $nome = $_POST['name'];
     $email = $_POST['email'];
@@ -19,11 +20,15 @@ if(isset($_POST['cadastrar'])){
     $cadastrar = new Cadastrar($pdo);
     $cadastrar->cadastrar($nome, $email, $nascimento);
 }
+//sair/finalizar sessao
 if(isset($_POST['sair'])){
     $sair = new Sessao();
     $sair->destroySession();
 }
-
+//ver lista de clientes
+if(isset($_POST['clientes'])){
+    header('Location: tabelaClientes.php');
+}
 ?>
 
 <!DOCTYPE html>
@@ -37,6 +42,7 @@ if(isset($_POST['sair'])){
     
     <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST">
         <input type="submit" name="sair" value="sair">
+        <input type="submit" name="clientes" value="Ver Clientes">
         <h2>Cadastrar Clientes(LEADS)</h2>
         <label for="name">Nome</label><br>
         <input type="text" name="name"><br>

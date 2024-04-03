@@ -7,7 +7,7 @@ class Sessao{
     public function startSession($usuario){
         session_start();
         $_SESSION['usuario'] = $usuario;
-        header('Location: admin.php');
+        header('Location: /View/admin.php');
         
     }
 
@@ -25,11 +25,3 @@ class Sessao{
         return $this->usuario;
     }
 }
-// session_start();
-// if(isset($_POST['sair'])){
-//     if(isset($_SESSION['usuario'])){
-//         session_destroy();
-//         header("Location: index.php");
-//         exit;
-//     }
-// }

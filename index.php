@@ -1,5 +1,5 @@
 <?php
-require_once 'Sessao.php';
+require_once 'autoload.php';
 
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
     if($_POST['name'] == 'admin' && $_POST['senha'] == 'admin'){
