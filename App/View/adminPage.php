@@ -1,36 +1,3 @@
-<?php
-session_start();
-require_once 'Sessao.php';
-include_once 'Cadastrar.php';
-include_once 'Config.php';
-
-if(isset($_SESSION['usuario'])){
-    echo "<h1>iae " . $_SESSION['usuario'] . "</h1>";
-
-}else{
-    header('Location: index.php');
-}
-
-//cadastrar cliente
-if(isset($_POST['cadastrar'])){
-    $nome = $_POST['name'];
-    $email = $_POST['email'];
-    $nascimento = $_POST['date'];
-
-    $cadastrar = new Cadastrar($pdo);
-    $cadastrar->cadastrar($nome, $email, $nascimento);
-}
-//sair/finalizar sessao
-if(isset($_POST['sair'])){
-    $sair = new Sessao();
-    $sair->destroySession();
-}
-//ver lista de clientes
-if(isset($_POST['clientes'])){
-    header('Location: tabelaClientes.php');
-}
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
