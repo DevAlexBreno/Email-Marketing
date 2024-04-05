@@ -1,0 +1,6 @@
+# 04/04/2024  - Consegui achar um video no youtube onde aprendi de forma simples o que é o autoload, é claro que de forma simples, mas efetiva. Vou deixar o link para quem tiver duvida ver o video: https://www.youtube.com/watch?v=QLlA9gKxCPc&list=LL&index=1 
+
+
+# 04/04/2024  - criação da classe de conexão com o banco de dados
+
+# 05/04/2024  - criação de uma nova tabela de usuarios.

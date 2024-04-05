@@ -9,3 +9,12 @@ create table clientes(
     nascimento DATE ,
     primary KEY (id)
 );
+
+create table usuarios(
+    id int NOT NULL auto_increment,
+    nome VARCHAR(50) NULL,
+    senha varchar(50) NULL,
+    PRIMARY KEY(id)
+);
+
+INSERT INTO usuarios (nome, senha) VALUES ('admin', 'admin123456');
